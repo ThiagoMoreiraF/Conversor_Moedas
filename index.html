@@ -17,21 +17,21 @@
         <label for="">
             converter <b>de</b>
             <select name="" id="">
-                <option value="">R$ Real Brasileiro</option>
+                <option value="real">R$ Real Brasileiro</option>
             </select>
         </label>
 
         <label for="">
             converter <b>para</b>
-            <select name="" id="">
-                <option value="">U$$ Dolar Americano</option>
-                <option value="">€ Euro</option>  
+            <select  class="currency-select">
+                <option value="dolar">U$$ Dolar Americano</option>
+                <option value="euro">€ Euro</option>  
             </select>
         </label>
 
         <label for="">
             valor
-            <input type="text" placeholder="Digite o valor a ser convertido">
+            <input class="input-currency" type="text" placeholder="Digite o valor a ser convertido">
         </label>
 
         <button type="submit" class="convert-button">Converter</button>
@@ -40,7 +40,7 @@
             <div class="currency-box">
                 <img src="./assets/img/real.png" alt="logo-moeda-a-converter">
                 <p class="currency">Real</p>
-                <p class="currency-value">R$ 0,00</p>
+                <p class="currency-value-to-convert">R$ 0,00</p>
             </div>
                 <img  class="arrow-img" src="./assets/img/seta.png" alt="seta-de-conversao">
             <div class="currency-box">

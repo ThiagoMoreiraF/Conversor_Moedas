@@ -50,5 +50,27 @@ dentro dela o botao do nosso html e adiciona um evento,
 que sao comportamentos que ao clicar vai chamar a função
 convertValues*/
 
+function changeCurrency(){
+    const currencyName = document.getElementById("currency-name");
+    const currencyImage = document.querySelector(".currency-img");
 
+     /*cria condicionais para mudar a imagem e o nome da moeda
+    de acordo com a escolha do usuario*/
+
+    if (currencySelect.value == "dolar") {
+        currencyName.innerHTML = "Dólar americano";
+        currencyImage.src = "./assets/img/dollar.png";
+    }
+    if (currencySelect.value == "euro") {
+        currencyName.innerHTML = "Euro";
+        currencyImage.src = "./assets/img/euro.png";
+    }
+
+    convertValues();
+
+}
+
+/* fica ouvindo o evento de mudança do select, ou seja,
+quando o usuario mudar a moeda, ele vai chamar a função*/
+currencySelect.addEventListener("change", changeCurrency);
 convertButton.addEventListener("click",convertValues);
